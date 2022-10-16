@@ -13,7 +13,7 @@ import os
 
 if os.path.isfile('env.py'):
     import env
-    
+
 DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = ('8xl54_&xmu3(=%#l%ukgs=hdjv=*%sd!%2p#3fl0+j(#mg2tey')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = DEVELOPMENT
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+DJANGO_ALLOWED_HOST = ['']
 
 
 # Application definition
@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'home',
+    'bookings',
+    
 ]
 
 SITE_ID = 1
