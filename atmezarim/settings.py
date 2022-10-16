@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'home',
     'bookings',
+    'rangefilter',
     
 ]
 
